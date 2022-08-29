@@ -120,7 +120,7 @@ class BinarySearchTree {
 		queue.enqueue(tree) // Start the traversal at the tree and add the tree node to the queue
 		let node = queue.dequeue() // Remove from the queue
 		while (node) {
-			values.push(node.values) // Add that value from the queue to an array
+			values.push(node.value) // Add that value from the queue to an array
 
 			if (node.left) {
 				queue.enqueue(node.left)
